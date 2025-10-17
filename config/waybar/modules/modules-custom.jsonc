@@ -1,0 +1,87 @@
+{
+  //_________\\ Custom Modules //_________\\
+
+  // rofi app launcher
+  "custom/launch_rofi": {
+    "format": "", // for arch
+    "on-click": "rofi -show drun -theme ~/.config/rofi/menu/menu.rasi || pkill rofi",
+    "on-click-right": "kitty --title yazi -e yazi",
+    "tooltip": true,
+    "tooltip-format": "Left Click: Launch Rofi\nRight Click: Launch yazi"
+  },
+
+  // power menu ( universal )
+  "custom/power_btn": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wlogout -b 6 --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css"
+  },
+
+  "custom/notify": {
+    "tooltip": true,
+    "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+    "format": "{} {icon} ",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  // System updater ( Arch based )
+  "custom/updater": {
+    "exec": "~/.config/hypr/scripts/systemupdate.sh --check",
+    "return-type": "json",
+    "format": " {}",
+    "on-click": "~/.config/hypr/scripts/systemupdate.sh --update",
+    "interval": 86400,
+    "tooltip": true
+  },
+
+  // waybar cava
+  "custom/cava": {
+    "exec": "~/.config/hypr/scripts/cava.sh",
+    "framerate": 60,
+    "format": "{}"
+  },
+
+  // clipboard manager
+  "custom/clipboard": {
+    "format": "󰅌 {}",
+    "exec": "~/.config/hypr/scripts/cliphist.sh l",
+    "on-click": "~/.config/hypr/scripts/cliphist.sh c",
+    "on-click-right": "~/.config/hypr/scripts/cliphist.sh w",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "You have {} items copied"
+  },
+
+  // Nightlight option.
+  "custom/nightlight": {
+    "format": "󰖔 ",
+    "exec": "~/.config/hypr/scripts/nightlight.sh",
+    "on-click": "~/.config/hypr/scripts/nightlight.sh --value",
+    "on-click-right": "~/.config/hypr/scripts/nightlight.sh --def",
+    "tooltip": true,
+    "tooltip-format": "Left Click: set temp 5000k\nRight Click: set temp default",
+    "interval": 1
+  },
+
+  // system info expand
+  "custom/system": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "system info\n\nLeft-click to check system info"
+  }
+}
