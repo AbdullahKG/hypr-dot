@@ -41,7 +41,7 @@
       "transition-left-to-right": false
     },
 
-    "modules": ["custom/system", "cpu", "memory", "disk", "temperature"]
+    "modules": ["custom/system", "cpu", "memory", "disk"]
   },
 
   // internet speed
