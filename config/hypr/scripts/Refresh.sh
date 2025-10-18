@@ -14,7 +14,7 @@ for _prs in "${_ps[@]}"; do
 done
 
 sleep 0.1
-dunst &
+#dunst &
 swaync &
 waybar &
 
