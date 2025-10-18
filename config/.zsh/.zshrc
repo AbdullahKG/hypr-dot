@@ -166,8 +166,7 @@ zstyle ':completion:*:*:docker-*:*' option-stacking yes
 #######################################################
 # ZSH Syntax highlighting
 #######################################################
-# source ~/.zsh/zsh-syntax-highlighting.zsh
-# source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting.zsh
 
 
 #######################################################
