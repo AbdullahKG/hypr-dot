@@ -6,7 +6,7 @@ if command -v fastfetch &> /dev/null; then
     # Only run fastfetch if we're in an interactive shell
     if [[ $- == *i* ]]; then
         if [[ -d "$HOME/.local/share/fastfetch" ]]; then
-            ffconfig=ascii-art
+            ffconfig=small-box
             fastfetch --config "$ffconfig"
             alias fastfetch='clr && fastfetch --config $ffconfig'
         else
