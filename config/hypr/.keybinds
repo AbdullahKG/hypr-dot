@@ -56,3 +56,4 @@ F2 | decrease brightness
  + right click | resize window
  + SHIFT + S | screenshot (entire workspace)
  + SHIFT + A | screenshot (selected region)
+ + SHIFT + K | edit config file
