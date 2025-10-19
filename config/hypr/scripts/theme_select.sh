@@ -155,3 +155,5 @@ fi
 
 
 "$scrDir/Refresh.sh" &> /dev/null
+
+notify-send -i "${assetsDir}/${PICS[$pic_index]}" "Theme Switched → $theme" -t 2000
