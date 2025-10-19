@@ -33,14 +33,14 @@ CTRL + U | system update
  + S | open settings in terminal
  + TAB | switch windows with Rofi
 ALT + TAB | Cycle through Windows
-F9 | toggle audio mute
-F10 | decrease volume
-F11 | increase volume
+F2 | toggle audio mute
+F3 | decrease volume
+F4 | increase volume
  + F1 | decrease nightlight
  + F2 | increase nightlight
  + F3 | reset nightlight
-F3 | increase brightness
-F2 | decrease brightness
+F7 | increase brightness
+F6 | decrease brightness
  + J | move focus down
  + K | move focus up
  + L | move focus right
