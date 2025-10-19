@@ -57,3 +57,5 @@ F2 | decrease brightness
  + SHIFT + S | screenshot (entire workspace)
  + SHIFT + A | screenshot (selected region)
  + SHIFT + K | edit config file
+ + SHIFT + LEFT | move current workspace to previous monitor
+ + SHIFT + RIGHT | move current workspace to next monitor
