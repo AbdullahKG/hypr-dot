@@ -59,3 +59,5 @@ F6 | decrease brightness
  + SHIFT + K | edit config file
  + SHIFT + LEFT | move current workspace to previous monitor
  + SHIFT + RIGHT | move current workspace to next monitor
+ + SHIFT + N | toggle the "minimized" special workspace visibility
+ + N | toggle a window from/to the "minimized" special workspace
